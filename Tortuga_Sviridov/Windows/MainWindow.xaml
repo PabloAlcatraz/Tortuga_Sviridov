@@ -1,0 +1,61 @@
+﻿<Window x:Class="Tortuga_Sviridov.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tortuga_Sviridov"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None">
+    <Grid Background="LightSkyBlue">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock 
+            Foreground="BlueViolet"
+            Text="Tortuga's"
+            Grid.Column="1"
+            Grid.Row="0"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"
+            FontSize="33"
+            FontWeight="Black"
+            FontFamily="Comic Sans MS"/>
+        <Button
+            x:Name="BtnMenu"
+            Content="Меню"
+            Grid.Column="0"
+            Grid.Row="1"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"
+            FontSize="30"
+            FontWeight="Black"
+            FontFamily="Comic Sans MS"
+            Background="{x:Null}" 
+            BorderBrush="{x:Null}"
+            Click="BtnMenu_Click"        
+            />
+        <Button
+            x:Name="BtnBoarding"
+            Content="Посадка"
+            Grid.Column="2"
+            Grid.Row="1"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"
+            FontSize="30"
+            FontWeight="Black"
+            FontFamily="Comic Sans MS" 
+            Click="BtnBoarding_Click" 
+            BorderBrush="{x:Null}" 
+            Background="{x:Null}"
+            />
+    </Grid>
+</Window>
